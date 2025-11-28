@@ -21,7 +21,6 @@ No diretório do projeto:
 
 - Usando Maven:
   ```
-  cd spring-backend
   mvn -f spring-backend/pom.xml spring-boot:run
   ```
 
