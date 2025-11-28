@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br" xmlns:th="http://www.thymeleaf.org"
+      th:replace="~{base :: layout(~{::page}, ${pageTitle})}">
+<body>
+  <div th:fragment="page">
+    <div id="product-detail" class="row justify-content-center">
+      <div class="col-md-8">
+        <div class="card shadow-sm">
+          <div class="card-body">
+            <h1 th:text="${product.name}">Nome do Produto</h1>
+
+            <div th:if="${product.imageUrl}" class="mb-3">
+              <img th:src="@{${product.imageUrl}}" th:alt="${product.name}" class="img-fluid" style="max-height:300px;object-fit:cover;">
+            </div>
+
+            <p class="lead">Preço: R$ <span th:text="${product.price}">0.00</span></p>
+
+            <p th:text="${product.description}">Descrição do produto</p>
+
+            <a th:href="@{/cart/add/{id}/(id=${product.id})}" class="btn btn-primary">🛒 Adicionar ao carrinho</a>
+
+            <br/><br/>
+            <a th:href="@{/cart/}">Ver carrinho</a> |
+            <a th:href="@{/}">Voltar aos produtos</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
