@@ -14,13 +14,21 @@ Repositório backend: Spring Boot
 ## Preparação (uma vez)
 Certifique-se de ter Java e Maven instalados:
 
-   -sudo apt update
-   
-   -sudo apt install openjdk-17-jdk
-   - java -version
+```bash
+sudo apt update
+# Atualiza a lista de pacotes disponíveis no sistema.
 
-   - sudo apt install maven
-   - mvn -v
+sudo apt install openjdk-17-jdk
+# Instala o Java OpenJDK 17 (JDK + JRE).
+
+java -version
+# Verifica se o Java foi instalado corretamente e mostra a versão instalada.
+
+sudo apt install maven
+# Instala o Apache Maven a partir dos repositórios oficiais do Ubuntu.
+
+mvn -v
+# Verifica se o Maven foi instalado corretamente e mostra sua versão.
 
 ## Executando a aplicação
 No diretório do projeto:
