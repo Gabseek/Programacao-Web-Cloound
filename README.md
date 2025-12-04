@@ -30,6 +30,7 @@ sudo apt install maven
 mvn -v
 # Verifica se o Maven foi instalado corretamente e mostra sua versão.
 
+```
 ## Executando a aplicação
 No diretório do projeto:
 
