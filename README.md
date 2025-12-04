@@ -13,7 +13,13 @@ Repositório backend: Spring Boot
 
 ## Preparação (uma vez)
 Certifique-se de ter Java e Maven instalados:
+
+   -sudo apt update
+   
+   -sudo apt install openjdk-17-jdk
    - java -version
+
+   - sudo apt install maven
    - mvn -v
 
 ## Executando a aplicação
